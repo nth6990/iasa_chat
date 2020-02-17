@@ -25,6 +25,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/EditText_chat"
+            android:hint="입력하세요"
+            android:gravity="center"
             >
 
         </EditText>

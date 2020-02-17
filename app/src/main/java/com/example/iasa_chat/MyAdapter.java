@@ -62,4 +62,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public int getItemCount() {
         return mDataset!=null ? mDataset.size() : 0;
     }
+
+    public void addChat(Chat_data chatData) {
+        mDataset.add(chatData);
+        notifyItemInserted(mDataset.size()-1);
+    }
 }
